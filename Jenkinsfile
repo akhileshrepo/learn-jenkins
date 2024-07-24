@@ -7,17 +7,17 @@ pipeline {
                 echo 'Hello World'
             }
         }
-	stage('Test') {
+	    stage('Test') {
             steps {
                 echo 'Hello World'
             }
         }
-	stage('Code Security') {
+	    stage('Code Security') {
             steps {
                 echo 'Hello World'
             }
         }
-	stage('Code Quality') {
+	    stage('Code Quality') {
             steps {
                 echo 'Hello World'
             }
