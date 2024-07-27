@@ -60,16 +60,48 @@
 // }
 
 
-def x = 10
-env.y = 20
-def samplef() {
-  print "XYZ function"
-}
+// def x = 10
+// env.y = 20
+// def samplef() {
+//   print "XYZ function"
+// }
+//
+// node('workstation') {
+//   stage('Test') {
+//     print x
+//     sh 'echo y - ${y}'
+//     samplef()
+//   }
+// }
 
-node('workstation') {
-  stage('Test') {
-    print x
-    sh 'echo y - ${y}'
-    samplef()
-  }
+pipeline {
+    agent any
+
+    stages {
+        stage('Compile') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+        stage('Build') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+        stage('Code Quality') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+        stage('Code Security') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+    }
 }
