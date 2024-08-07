@@ -63,20 +63,23 @@ pipeline {
 
 
 
-// // def x = 10
-// env.y = 20
-// def samplef() {
-//   print "XYZ function"
-// }
-//
-// node('workstation') {
-//   stage('Test') {
-//     print x
-//     sh 'echo y - ${y}'
-//     samplef()
-//   }
-// }
-//
+def x = 10
+env.y = 20
+def samplef() {
+  print "XYZ function"
+}
+
+node('workstation') {
+  stage('Test') {
+    print x
+    sh 'echo y - ${y}'
+    samplef()
+  }
+}
+
+
+
+
 // pipeline {
 //     agent any
 //
