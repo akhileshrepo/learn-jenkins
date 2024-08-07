@@ -35,9 +35,9 @@ pipeline {
                             message "Should we continue?"
                             ok "Yes, we should."
             }
-            when {
-                            branch 'production'
-            }
+//             when {
+//                             branch 'production'
+//             }
             steps {
                 echo 'Hello World'
                 echo TEST_URL
