@@ -11,24 +11,24 @@ pipeline {
             ansiColor('xterm')
     }
 
-    parameters {
-            string(name: 'PERSON', defaultValue: 'Mr Jenkins', description: 'Who should I say hello to?')
-
-            text(name: 'BIOGRAPHY', defaultValue: '', description: 'Enter some information about the person')
-
-            booleanParam(name: 'TOGGLE', defaultValue: true, description: 'Toggle this value')
-
-            choice(name: 'CHOICE', choices: ['One', 'Two', 'Three'], description: 'Pick something')
-
-            password(name: 'PASSWORD', defaultValue: 'SECRET', description: 'Enter a password')
-    }
-
-    triggers { pollSCM('*/1 * * * *') }
-
-    tools {
-            maven 'maven'
-    }
-
+//     parameters {
+//             string(name: 'PERSON', defaultValue: 'Mr Jenkins', description: 'Who should I say hello to?')
+//
+//             text(name: 'BIOGRAPHY', defaultValue: '', description: 'Enter some information about the person')
+//
+//             booleanParam(name: 'TOGGLE', defaultValue: true, description: 'Toggle this value')
+//
+//             choice(name: 'CHOICE', choices: ['One', 'Two', 'Three'], description: 'Pick something')
+//
+//             password(name: 'PASSWORD', defaultValue: 'SECRET', description: 'Enter a password')
+//     }
+//
+//     triggers { pollSCM('*/1 * * * *') }
+//
+//     tools {
+//             maven 'maven'
+//     }
+//
     stages {
         stage('Compile') {
 //             input {
@@ -58,9 +58,9 @@ pipeline {
         }
     }
 }
-
-
-// def x = 10
+//
+//
+// // def x = 10
 // env.y = 20
 // def samplef() {
 //   print "XYZ function"
@@ -73,35 +73,35 @@ pipeline {
 //     samplef()
 //   }
 // }
-
-pipeline {
-    agent any
-
-    stages {
-        stage('Compile') {
-            steps {
-                echo 'Hello World'
-            }
-        }
-        stage('Test') {
-            steps {
-                echo 'Hello World'
-            }
-        }
-        stage('Build') {
-            steps {
-                echo 'Hello World'
-            }
-        }
-        stage('Code Quality') {
-            steps {
-                echo 'Hello World'
-            }
-        }
-        stage('Code Security') {
-            steps {
-                echo 'Hello World'
-            }
-        }
-    }
-}
+//
+// pipeline {
+//     agent any
+//
+//     stages {
+//         stage('Compile') {
+//             steps {
+//                 echo 'Hello World'
+//             }
+//         }
+//         stage('Test') {
+//             steps {
+//                 echo 'Hello World'
+//             }
+//         }
+//         stage('Build') {
+//             steps {
+//                 echo 'Hello World'
+//             }
+//         }
+//         stage('Code Quality') {
+//             steps {
+//                 echo 'Hello World'
+//             }
+//         }
+//         stage('Code Security') {
+//             steps {
+//                 echo 'Hello World'
+//             }
+//         }
+//     }
+// }
