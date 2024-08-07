@@ -63,10 +63,6 @@ pipeline {
 
 
 
-
-
-//
-//
 // // def x = 10
 // env.y = 20
 // def samplef() {
