@@ -52,9 +52,9 @@ pipeline {
     post {
         always {
             echo 'post'
-            send Email
-            Trigger some other Job
-            update Jira
+//             send Email
+//             Trigger some other Job
+//             update Jira
         }
     }
 }
