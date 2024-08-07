@@ -39,7 +39,7 @@ pipeline {
 //                             branch 'production'
 //             }
             steps {
-                //echo 'Hello World'
+                echo 'Hello World'
                 echo TEST_URL
                 echo SSH
                 sh 'env'
